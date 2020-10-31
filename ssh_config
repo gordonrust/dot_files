@@ -1,0 +1,112 @@
+##This will configure only this user's SSH connnections
+#
+#ServerAliveInterval 50
+#
+#
+Host utkarsh
+	HostName 34.83.148.211
+	User utkarsh
+	# User dhruv
+	LocalForward 6777 127.0.0.1:5588
+	LocalForward 6888 127.0.0.1:5888
+
+Host synt_data
+	HostName 18.218.239.101
+	User ubuntu
+	LocalForward 8000 127.0.0.1:8000
+	LocalForward 6668 127.0.0.1:6668
+	LocalForward 6688 127.0.0.1:6688
+	LocalForward 6888 127.0.0.1:6889
+	# IdentityFile ~/work/.pem_files/bv-aws.pem
+
+Host 47
+	HostName 13.58.231.47
+	User ubuntu
+	LocalForward 6868 127.0.0.1:6868
+	LocalForward 6668 127.0.0.1:6668
+	LocalForward 6688 127.0.0.1:6688
+	LocalForward 6888 127.0.0.1:6888
+	IdentityFile ~/work/.pem_files/47-aws.pem
+
+Host pranav
+	HostName 18.236.130.201
+	User ubuntu
+	# LocalForward 8000 127.0.0.1:8000
+	# LocalForward 7777 127.0.0.1:7777
+	# LocalForward 7778 127.0.0.1:7778
+	# LocalForward 7888 127.0.0.1:7888
+	IdentityFile ~/work/.pem_files/bv-aws.pem
+
+Host 14
+	HostName 34.222.131.14
+	User ubuntu
+	LocalForward 8000 127.0.0.1:8000
+	LocalForward 7777 127.0.0.1:7777
+	LocalForward 7777 127.0.0.1:7878
+	LocalForward 7778 127.0.0.1:7778
+	LocalForward 7788 127.0.0.1:7788
+	LocalForward 7888 127.0.0.1:7888
+	IdentityFile ~/work/.pem_files/bv-aws.pem
+
+Host gc8_footy
+	HostName  35.203.182.89
+	User gordonrust
+	LocalForward 7777 127.0.0.1:7777
+	LocalForward 7778 127.0.0.1:7778
+	# Port 22
+
+Host footy
+	HostName  35.230.14.178
+	User aimonk
+	LocalForward 7888 127.0.0.1:7888
+	LocalForward 7788 127.0.0.1:7788
+	# Port 22
+ #
+
+Host aimdev
+	HostName  202.83.18.52
+	User aimdev
+	LocalForward 8888 127.0.0.1:8888
+	# Port 22
+
+Host novelty 
+	HostName  18.237.73.224
+	User ubuntu
+	LocalForward 8228 127.0.0.1:8888
+	LocalForward 8080 127.0.0.1:8080
+	LocalForward 8787 127.0.0.1:8787
+	LocalForward 8789 127.0.0.1:8789
+	IdentityFile ~/work/.pem_files/novelty..pem
+
+Host sibi 
+	HostName  3.85.246.44
+	User ec2-user
+	LocalForward 8127 127.0.0.1:8888
+	IdentityFile ~/work/.pem_files/aimonk-ec2..pem
+
+Host satya
+  HostName 76.176.29.4
+  User ubuntu
+  # LocalForward 7878 127.0.0.1:35585
+  LocalForward 6006 127.0.0.1:6666
+  LocalForward 8008 127.0.0.1:8891
+  LocalForward 8791 127.0.0.1:8791
+	LocalForward 7878 127.0.0.1:8787
+	LocalForward 8788 127.0.0.1:8788
+
+Host aimonkca
+	HostName  34.212.84.94
+	User ubuntu
+	LocalForward 8127 127.0.0.1:8888
+	IdentityFile ~/work/.pem_files/aimonkca..pem
+
+
+Host fashionophile
+	HostName  54.214.196.41
+	User ubuntu
+	LocalForward 8118 127.0.0.1:8888
+	IdentityFile ~/work/.pem_files/fashionophile..pem
+
+Host satya_bare
+	HostName 76.176.29.4
+	User ubuntu
